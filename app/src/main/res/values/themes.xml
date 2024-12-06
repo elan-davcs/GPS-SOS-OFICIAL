@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GPSSOSOFICIAL" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.GPSSOSOFICIAL" parent="Base.Theme.GPSSOSOFICIAL" />
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/morado</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
+    <style name="Theme.GPSSOSOFICIAL.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.GPSSOSOFICIAL.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GPSSOSOFICIAL.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

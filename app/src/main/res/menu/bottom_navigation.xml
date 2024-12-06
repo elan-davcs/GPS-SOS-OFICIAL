@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/inicioFragment"
+        android:title="Inicio"
+        android:icon="@drawable/location_icon" />
+
+    <item android:id="@+id/mapaFragment"
+        android:title="Mapa"
+        android:icon="@drawable/map_icon" />
+
+    <item android:id="@+id/notificacionesFragment"
+        android:title="Notificaciones"
+        android:icon="@drawable/notificaciones_icon" />
+
+    <item android:id="@+id/perfilFragment"
+        android:title="Perfil"
+        android:icon="@drawable/person_icon" />
+</menu>

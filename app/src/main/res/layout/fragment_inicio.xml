@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/rosa"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:text="Inicio" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/rosa"
+                android:textSize="30dp"
+                android:text="Botón de Panico" />
+
+            <Button
+                android:id="@+id/btnCirculo"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@drawable/circular_button_background"
+                android:gravity="center"
+                android:text="S.O.S"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="70dp" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</FrameLayout>

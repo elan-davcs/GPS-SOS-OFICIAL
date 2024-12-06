@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#6B0090" /> <!-- Cambiar a un color cuando el botón está presionado -->
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9510C3" /> <!-- Color normal del botón -->
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+</selector>

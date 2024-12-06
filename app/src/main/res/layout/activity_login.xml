@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contendor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo" />
+        <TextView
+            android:id="@+id/textini"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Iniciar Sesión"
+            android:layout_below="@+id/imglogo"
+            android:textAlignment="center"
+            android:textColor="@color/rosa"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contenedor2"
+            android:layout_below="@+id/textini"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            tools:ignore="Orientation">
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress"
+                android:layout_margin="5dp"
+                android:textColor="@color/rosa"
+                android:background="@drawable/border_edittext"
+                android:hint="Correo@correo.com"/>
+
+            <TextView
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Contraseña"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="*********"
+                android:textColor="@color/rosa"
+                android:inputType="textPassword"
+                android:background="@drawable/border_edittext"
+                android:layout_below="@+id/textcor" />
+
+            <Button
+                android:id="@+id/btningresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="25dp"
+                android:backgroundTint="@color/morado"
+                app:cornerRadius="30dp"
+                android:text="Ingresar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contendor3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="DuplicateIds"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No tienes una cuenta? "
+                android:id="@+id/textView"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrate"
+                android:id="@+id/btnRegister"
+                android:backgroundTint="@color/azul"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

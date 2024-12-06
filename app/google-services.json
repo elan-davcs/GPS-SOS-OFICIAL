@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802205466898",
+    "project_id": "gpssosoficial-d1257",
+    "storage_bucket": "gpssosoficial-d1257.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802205466898:android:4d050ecfafcfa33b7233cb",
+        "android_client_info": {
+          "package_name": "com.example.gpssosoficial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAljlmVCHz8-1X2Qkc_sqgTZ-Vp_xX2luw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

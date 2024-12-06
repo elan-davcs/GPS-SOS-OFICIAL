@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contenedor_perfil"
+    tools:context=".PerfilFragment">
+
+    <RelativeLayout
+        android:id="@+id/Vperfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/rosa"
+            android:fontFamily="sans-serif-black"
+            android:textSize="30sp"
+            android:text="Perfil" />
+
+        <RelativeLayout
+            android:id="@+id/content_scroll"
+            android:layout_below="@+id/title_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/contenedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/user"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/textname"
+                        android:layout_below="@+id/img_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fulanito"
+                        android:textSize="20sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textname"
+                        android:layout_margin="10sp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textname"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginEnd="15sp"
+                            android:fontFamily="sans-serif-black"
+                            android:gravity="center_horizontal"
+                            android:text="000-000-000"
+                            android:textSize="20sp" />
+
+                        <ImageButton
+                            android:id="@+id/btncopy"
+                            android:layout_width="30sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:layout_below="@id/textid"
+                            android:layout_marginTop="5sp"
+                            android:background="@drawable/btncopy_icon" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/linear2"
+                    android:layout_below="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp">
+
+                    <LinearLayout
+                        android:id="@+id/datos_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Correo: "
+                            android:textSize="21sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="ejemplo@ucol.mx"
+                            android:textSize="20sp"
+                            android:textColor="@color/morado"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/datos_cel"
+                        android:layout_below="@+id/datos_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Celular: "
+                            android:textSize="21sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_cel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="314 123 4567"
+                            android:textSize="20sp"
+                            android:textColor="@color/morado"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contacto"
+                        android:layout_below="@+id/datos_cel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <Button
+                            android:id="@+id/agg_contac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agregar contacto"
+                            android:layout_weight="1"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/ver_contac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="Ver contacto"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cerrar"
+                        android:layout_below="@+id/contacto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="50sp">
+
+                        <Button
+                            android:id="@+id/btn_cerrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cerrar Sesión"
+                            android:textSize="20sp"
+                            android:backgroundTint="@color/rojo"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

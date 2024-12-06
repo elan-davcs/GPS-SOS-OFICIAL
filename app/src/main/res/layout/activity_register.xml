@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/contenedor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contenedor"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtregistrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Registrarse"
+                android:textColor="@color/rosa"
+                android:textStyle="bold"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nombre(s)"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/txtapellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Apellido"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtapellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido(s)"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/txtcelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Celular"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtcelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="000 000 0000"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:minHeight="48dp" />
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="correo@correo.com"
+                android:inputType="textWebEmailAddress"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Contraseña"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textcor"
+                app:counterEnabled="true"
+                android:minHeight="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:hint="********"/>
+            <TextView
+                android:id="@+id/txtpasswordconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Confirmar contraseña"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etxtpasswordconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textcor"
+                app:counterEnabled="true"
+                android:minHeight="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edittext"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:hint="********"/>
+
+            <LinearLayout
+                android:id="@+id/contenedor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/cb_terminos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/btntermcond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptas terminos y condiciones"
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:strokeColor="@color/rosa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="25dp"
+                android:backgroundTint="@color/morado"
+                app:cornerRadius="24dp"
+                android:text="Registrarse"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:id="@+id/contendor4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="DuplicateIds"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya tienes una cuenta? "
+                    android:id="@+id/textView"/>
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresar"
+                    android:backgroundTint="@color/azul"
+                    app:cornerRadius="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

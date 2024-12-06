@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="3dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:src="@drawable/user"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/contexto"
+            android:layout_toEndOf="@id/img">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombres">
+                <TextView
+                    android:id="@+id/nameContac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="name"
+                    android:textColor="@color/azul"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/lastnameContac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="last name"
+                    android:textColor="@color/azul"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contexto"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/img">
+            <TextView
+                android:id="@+id/celularContac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:fontFamily="sans-serif-black"
+                android:text="celular"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/deleteContac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:layout_toEndOf="@id/contexto">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
