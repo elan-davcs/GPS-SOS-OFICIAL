@@ -27,11 +27,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAx5GVPGsd_Kq_lEY1nMEdSpccU_Y33ZNw" />
+            android:value="" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
 
         <activity
             android:name=".ConfirmacionActivity"
